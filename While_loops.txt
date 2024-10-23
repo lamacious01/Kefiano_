@@ -1,0 +1,29 @@
+correct_number = 2
+
+num_of_chances = 3
+
+counter = 0
+
+while counter < num_of_chances:
+  
+    user_input = int(input('Kindly guess a number from 1 to 10: '))
+  
+    if user_input <= 10:
+    
+        if user_input == correct_number:
+      
+            print('congratulations, you passed')
+      
+            break
+    
+        else:
+      
+            counter += 1
+      
+            if counter < num_of_chances:
+        
+                print('wrong, try again')
+      
+            else:
+        
+                print('You failed')
